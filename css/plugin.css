@@ -1,0 +1,128 @@
+form .dnd {
+   display: none;
+}
+
+.file_block {
+    position: relative;
+    pointer-events:none;
+}
+
+.activeDrag {
+    display: flex !important;
+    background: #050505ab;
+    height: 100%;
+    width: 100%;
+    justify-content: center;
+    align-items: center;
+    font-size: 1.5em;
+    color: #e5e5e5;
+    position: absolute;
+    z-index: 999;
+    pointer-events: none;
+}
+
+.file_block .file-select {
+    pointer-events:auto;
+}
+
+
+.list_files {
+    background: #2A3E71;
+    padding: 30px;
+    margin-top: 30px;
+}
+
+.list_files h2 {
+    text-align: center;
+    color: #fbfbfb;
+    margin-bottom: 10px;
+    font-size: 2em;
+}
+
+.list_files .preview {
+    padding: 15px;
+}
+
+.list_files .preview p, .files > p {
+    color: #e5e5e5;
+    font-size: 1.1em;
+    border-bottom: 2px solid #ffb42c;
+    padding-bottom: 5px;
+    margin-bottom: 15px;
+}
+
+.list_files .preview .img_list, .list_files .files_list {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: start;
+}
+
+.list_files .preview .img_list .group-img {
+    margin: 10px;
+    position: relative;
+}
+
+.list_files .preview .img_list .group-img img {
+    width: 200px;
+    height: 200px;
+}
+
+.files_list .group-file {
+    text-align: center;
+    color: #fff;
+    margin: 15px 25px;
+    position: relative;
+    padding: 0 20px;
+}
+
+.files_list .group-file img {
+    width: 70px;
+}
+
+
+.loading_files {
+    margin-top: 30px;
+    padding: 30px;
+    background: #00000038;
+}
+
+.loading_files .file_loading {
+    color: #fff;
+}
+
+.loading_files .group-loading {
+    display: flex;
+    justify-content: space-around;
+    margin-bottom: 20px;
+}
+
+.progress_loading progress {
+    height: 20px;
+}
+
+
+.file_loading {
+    text-align: center;
+}
+
+.file_loading > img {
+    width: 120px;
+    margin-bottom: 30px;
+}
+
+.group-loading p {
+    width: 30%;
+}
+
+.list_files .file_del {
+    position: absolute;
+    top: 0;
+    width: 20px !important;
+    height: 20px !important;
+    right: 0;
+    cursor: pointer;
+}
+
+.img_list .group-file {
+    position: relative;
+}
